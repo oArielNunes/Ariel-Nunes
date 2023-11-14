@@ -33,11 +33,12 @@ nav {
     z-index: 1;
     position: fixed;
     width: 100%;
-    height: 7vh;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: var(--main-color);
+    background: transparent;
+    backdrop-filter: blur(15px);
 }
 
 .logo {
@@ -115,9 +116,11 @@ nav {
     font-weight: 100;
     text-shadow: -7px 7px 10px var(--dark);
 }
+
 .img {
     font-size: 10vw;
     animation: in-out 3s infinite;
+    animation-delay: 800ms;
     color: var(--emphasis-color);
 }
 
@@ -366,7 +369,7 @@ nav {
     cursor: pointer;
 }
 footer{
-    top: 80vh;
+    top: 100vh;
     position: relative;
     bottom: 0;
     font-size: 16px;
@@ -380,4 +383,59 @@ footer a {
     text-decoration: none;
     color: #306844;
     cursor: pointer;
+}
+
+
+.hidden {
+    filter: blur(10px);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+.hidden2 {
+    filter: blur(10px);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.text :nth-child(2) {
+    transition-delay: 400ms;
+}
+.text :nth-child(3) {
+    transition-delay: 600ms;
+}
+
+
+.gallery-container :nth-child(3) {
+    transition-delay: 400ms ;
+}
+.gallery-container :nth-child(4) {
+    transition-delay: 600ms ;
+}
+.gallery-container :nth-child(5) {
+    transition-delay: 800ms ;
+}
+.gallery-container :nth-child(6) {
+    transition-delay: 1000ms ;
+}
+
+
+.contact-icon :nth-child(2) {
+    transition-delay: 400ms ;
+}
+.contact-icon :nth-child(3) {
+    transition-delay: 600ms ;
+}
+.contact-icon :nth-child(4) {
+    transition-delay: 800ms ;
+}
+.contact-icon :nth-child(5) {
+    transition-delay: 1000ms ;
 }
