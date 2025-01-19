@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="./img/LOGO.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Nunes de Azevedo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo"><a href="#home"><img src="./img/LOGO.png" alt="me in pixelart"></a></h1>
+            <ul class="menu-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#habilities">Habilidades</a></li>
+            </ul>
+            <a href="#contact"><p class="contact">Contato</p></a>
+        </nav>
+    </header>
+        <div id="home">
+            <div class="text">
+                <p class="hidden">
+                    <ion-icon name="code-outline"></ion-icon>
+                    Ariel Nunes de Azevedo, 27 anos
+                </p>
+                <p class="hidden">
+                    <ion-icon name="school-outline"></ion-icon>
+                    Análise e Desenvolvimento de Sistemas    
+                </p>
+                <p class="hidden">
+                    <ion-icon name="location-outline"></ion-icon>
+                    Guarulhos | SP | BRASIL     
+                </p>
+            </div>    
+                <div class="img hidden2">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+            </div>
+        <div id="about">
+            <div class="about-text">
+                <p class="hidden">
+                    Sou desenvolvedor Full Stack, apaixonado por criar soluções inovadoras que combinam eficiência técnica e criatividade. Com foco em aprendizado contínuo e colaboração, busco transformar ideias em projetos impactantes e escaláveis.
+                </p>
+                <p class="hidden">Vamos criar algo incrível juntos? 🚀 </p>
+            </div>
+            <div class="about-img">
+                <img src="./img/me.png" alt="me in pixel art" id="me">
+            </div>
+        </div>
+        <div id="projects">
+            <h2 id="title">Confira meus projetos!</h2>
+            <div class="gallery-container">
+                <a href="https://oarielnunes-arireceitas.netlify.app/#home-content" class="gallery-item hidden" target="_blank">
+                    <img src="./img/AriReceitas.jpg" alt="foto do site">
+                </a>
+                <a href="https://conversor-io.netlify.app" class="gallery-item hidden2" target="_blank">
+                    <img src="./img/Conversor.jpg" alt="foto do site">
+                </a>
+                <a href="https://oarielnunescalculadora.netlify.app" class="gallery-item hidden" target="_blank">
+                    <img src="./img/calculadora.jpg" alt="foto do site">
+                </a>
+                <a href="https://jogodavelha-oarielnunes.netlify.app" class="gallery-item hidden2">
+                    <img src="./img/jogoDaVelha.jpg" alt="">
+                </a>
+                <a href="https://listadetarefasarielnunes.netlify.app" class="gallery-item hidden">
+                    <img src="./img/listDeTarefas.jpg" alt="">
+                </a>
+                <a href="" class="gallery-item hidden2">
+                    <img src="./img/soon.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div id="habilities">
+            <div class="hab-icon">
+                <ion-icon name="logo-html5" ></ion-icon>
+
+                <ion-icon name="logo-css3"></ion-icon>
+
+                <ion-icon name="logo-react" ></ion-icon>
+
+                <ion-icon name="logo-javascript"></ion-icon>
+
+            </div>
+            <div class="hab-img">
+                <h2 id="title">Visualize meu currículo!</h2>
+                <a href="https://drive.google.com/file/d/1ZjjXdW-fmjvGd1MUrt6PNOu5LXzKA3oH/view?usp=sharing" target="_blank"><button>FullStack</button></a>
+                <a href="https://drive.google.com/file/d/1Dtbum6G0Ew0FLKJeit5ohl8RFNHtexkd/view?usp=sharing" target="_blank"><button>Suporte</button></a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact-icon">
+                <a href="https://wa.me/message/BCA7AWBUG4HGE1" target="_blank" class="hidden"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="mailto:nunesariel98@outlook.com" target="_blank" class="hidden" ><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="https://github.com/oArielNunes" target="_blank" class="hidden"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/ariel-nunes-86b342232/" target="_blank" class="hidden"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://drive.google.com/file/d/1rw63t1woakPDRE6OdteGzSrQCFJ_pzQj/view?usp=drive_link" target="_blank" class="hidden"><ion-icon name="document-outline"></ion-icon></a>
+            </div>
+            <div class="leave-msg">
+                <h3>Deixe uma mensagem</h3>
+                <form action="GET">
+                <label for="nome"><ion-icon name="person-outline"></ion-icon></label><input type="text" id="nome" name="nome" required placeholder="seu nome"  autocomplete="off">
+                <label for="email"><ion-icon name="mail-outline"></ion-icon></label><input type="email" name="email" id="email" required placeholder="seu e-mail" autocomplete="off">
+                <textarea rows="10" cols="50" name="mensagem" id="mensagem" required placeholder="escreva sua mensagem"></textarea>
+                <button type="submit">enviar mensagem</button>
+            </form>
+            </div>
+        </div>
+            <footer>copyright - &copy; &middot; 2023, todos os direitos reservados.
+                Desenvolvido por <a href="https://github.com/oArielNunes">Ariel Nunes</a>
+            </footer>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./script/script.js"></script>
+</body>
